@@ -3,6 +3,8 @@
 
 > https://github.com/MrLeo/notion
 
+https://github.com/MrLeo/notion/settings/pages
+
 # 域名
 
 > https://mrleo.github.io/notion/
