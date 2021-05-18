@@ -11,7 +11,7 @@ https://github.com/MrLeo/notion/settings/pages
 
 - 网易云音乐: https://mrleo.github.io/notion/
 - 前端笔试题: https://mrleo.github.io/notion/test.html
-- 重定向页面: https://mrleo.github.io/notion/redirect.html?url=https%3A%2F%2Fwww.kdocs.cn%2Fl%2Fcem034RUAsPr
+- 重定向页面: https://mrleo.github.io/notion/redirect.html?url=https%3A%2F%2Fwww.kdocs.cn%2Fl%2FsnADpf8t0ZN2
 # 小组件
 
 - 网易云音乐: https://music.163.com/#/outchain/0/5361959265/
