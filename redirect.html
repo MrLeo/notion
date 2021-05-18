@@ -6,15 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>重定向</title>
   <script>
-    if(URLSearchParams){
-      var params = new URLSearchParams(window.location.search.substring(1))
-      window.location.href = decodeURIComponent(params.get(url))
-    }else{
-      var url = window.location.href
-      var obj = {}
-      url.replace(/[\?&]([^=]+)=([^&#$]*)/gim, (match, g1, g2, offset, str) => (obj[g1] = g2))
-      window.location.href = decodeURIComponent(obj.url)
-    }
+    var url = window.location.href
+    var obj = {}
+    url.replace(/[\?&]([^=]+)=([^&#$]*)/gim, (match, g1, g2, offset, str) => (obj[g1] = g2))
+    if(obj.url) window.location.href = decodeURIComponent(obj.url)
   </script>
 </head>
 <body></body>

@@ -9,6 +9,9 @@ https://github.com/MrLeo/notion/settings/pages
 
 > https://mrleo.github.io/notion/
 
+- 网易云音乐: https://mrleo.github.io/notion/
+- 前端笔试题: https://mrleo.github.io/notion/test.html
+- 重定向页面: https://mrleo.github.io/notion/redirect.html?url=http://baidu.com
 # 小组件
 
 - 网易云音乐: https://music.163.com/#/outchain/0/5361959265/
