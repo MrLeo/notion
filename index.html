@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0;url=https://music.163.com/outchain/player?type=0&id=5214099655&auto=1&height=90">
-  <title>Notion</title>
+  <title>重定向</title>
+  <script>
+    var url = window.location.href
+    var obj = {}
+    url.replace(/[\?&]([^=]+)=([^&#$]*)/gim, (match, g1, g2, offset, str) => (obj[g1] = g2))
+    if(obj.url) window.location.href = decodeURIComponent(obj.url)
+  </script>
 </head>
 <body>
 
