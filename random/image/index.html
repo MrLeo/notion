@@ -5,8 +5,12 @@
   <title>重定向</title>
   <script>
     var query = new URLSearchParams(location.search);
+    var width = query.get(width) || 200;
+    var height = query.get(height) || 200;
+    query.delete('width');
+    query.delete('height');
     query.append('random', Math.random());
-    window.location.href = 'https://picsum.photos/200/200.webp?'+query.toString();
+    window.location.href = 'https://picsum.photos/'+width+'/'+height+'.webp?'+query.toString();
   </script>
 </head>
 <body>
