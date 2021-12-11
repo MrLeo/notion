@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <title>重定向</title>
   <script>
-    var url = window.location.href
-    var obj = {}
-    url.replace(/[\?&]([^=]+)=([^&#$]*)/gim, (match, g1, g2, offset, str) => (obj[g1] = g2))
-    if(obj.url) window.location.href = decodeURIComponent(obj.url)
-    else window.location.href = 'https://picsum.photos/200/200.webp?random='+Math.random()
+    var query = new URLSearchParams(location.search);
+    query.append('random', Math.random());
+    window.location.href = 'https://picsum.photos/200/200.webp?'+query.toString();
   </script>
 </head>
 <body>
