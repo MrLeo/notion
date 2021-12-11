@@ -7,7 +7,8 @@
     var url = window.location.href
     var obj = {}
     url.replace(/[\?&]([^=]+)=([^&#$]*)/gim, (match, g1, g2, offset, str) => (obj[g1] = g2))
-    if(obj.url) window.location.href = decodeURIComponent(obj.url || 'https://picsum.photos/200/200.webp?random='+Math.random())
+    if(obj.url) window.location.href = decodeURIComponent(obj.url)
+    else window.location.href = 'https://picsum.photos/200/200.webp?random='+Math.random()
   </script>
 </head>
 <body>
