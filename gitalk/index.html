@@ -11,6 +11,11 @@
 <body>
   <div id="gitalk-container"></div>
   <script>
+    try {
+      console.log('[parent] ->',window.parent.location.pathname);
+    } catch (error) {
+      alert(error.message)
+    }
     // Gitalk: https://github.com/gitalk/gitalk/blob/master/readme-cn.md
     // GitHub Application: https://github.com/settings/applications/1834304
     var gitalk = new Gitalk({
@@ -19,7 +24,7 @@
       repo: 'notion',
       owner: 'MrLeo',
       admin: ['MrLeo'],
-      id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: window.parent.location.pathname,      // Ensure uniqueness and length less than 50
       distractionFreeMode: true  // Facebook-like distraction free mode
     })
 
