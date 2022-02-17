@@ -24,4 +24,3 @@ https://github.com/MrLeo/notion/settings/pages
 - 笔试题: https://www.kdocs.cn/l/siiFaelnmpqw
 
 
-<iframe src="https://mrleo.github.io/notion/gitalk" style="width:100%; height: 100%"/>
