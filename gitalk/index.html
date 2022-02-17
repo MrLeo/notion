@@ -28,20 +28,21 @@
     gitalk.render('gitalk-container')
 
     try {
-      console.info('[Gitalk] -> parent', getParentUrl);
+      console.info('[Gitalk] -> parent', getParentUrl());
     } catch (error) {
       console.error('[Gitalk] -> parent', error)
     }
 
     function getParentUrl() {
-      var isInIframe = (parent !== window), //检测是否该页面是否在iframe中
-        parentUrl = null;
-
-      if (isInIframe) {
-        parentUrl = document.referrer;
+      var url = null;
+      if (parent !== window) {
+        try {
+          url = parent.location.href;
+        } catch (e) {
+          url = document.referrer;
+        }
       }
-
-      return parentUrl;
+      return url;
     }
   </script>
 </body>
