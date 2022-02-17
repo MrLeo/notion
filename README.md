@@ -7,7 +7,8 @@ https://github.com/MrLeo/notion/settings/pages
 
 # 域名
 
-> https://mrleo.github.io/notion/
+> 1. https://mrleo.github.io/notion/
+> 2. https://notion.xuebin.me/
 
 - 网易云音乐: https://mrleo.github.io/notion/
 - gitalk: https://mrleo.github.io/notion/gitalk
