@@ -26,3 +26,4 @@ selenium-debug.log
 *.sw*
 .settings
 .git
+.eslintcache
