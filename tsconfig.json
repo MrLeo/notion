@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    // "rootDir": "src",
+    "outDir": "./dist",
+    // "allowJs": true,
+    "checkJs": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noUnusedParameters": true,
+    "strictFunctionTypes": false,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "paths": {
+      "env": ["env/local.json"],
+      "types/*": ["types/*"],
+      "common/*": ["common/*"]
+    }
+  },
+  // "include": [
+  //   "**/*.ts",
+  // ],
+  "exclude": ["**/*.js", "tests/**/*", "node_modules", ".git", "dist"]
+}
