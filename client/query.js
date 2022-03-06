@@ -5,7 +5,7 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY })
 /**
  * @see https://developers.notion.com/reference/post-database-query
  */
-;(async (): Promise<void> => {
+;(async () => {
   const databaseId = '897e5a76-ae52-4b48-9fdf-e71f5945d1af'
   const response = await notion.databases.query({
     database_id: databaseId,

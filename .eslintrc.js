@@ -125,16 +125,16 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-unused-vars': ['warn'],
   },
-  overrides: [
-    {
-      // enable the rule specifically for TypeScript files
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/no-explicit-any': ['error'],
-        '@typescript-eslint/no-unused-vars': ['error'],
-        '@typescript-eslint/explicit-function-return-type': ['error'],
-        '@typescript-eslint/explicit-module-boundary-types': ['error'],
-      },
-    },
-  ],
+  // overrides: [
+  //   {
+  //     // enable the rule specifically for TypeScript files
+  //     files: ['*.ts', '*.tsx'],
+  //     rules: {
+  //       '@typescript-eslint/no-explicit-any': ['error'],
+  //       '@typescript-eslint/no-unused-vars': ['error'],
+  //       '@typescript-eslint/explicit-function-return-type': ['error'],
+  //       '@typescript-eslint/explicit-module-boundary-types': ['error'],
+  //     },
+  //   },
+  // ],
 }
