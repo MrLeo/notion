@@ -2,7 +2,6 @@
 
 > https://lxb.notion.site/Notion-7aa7d6a527b14937864c2106884d2089
 
-https://github.com/MrLeo/notion/settings/pages
 
 # 域名
 
@@ -24,3 +23,7 @@ https://github.com/MrLeo/notion/settings/pages
 
 - 天气预报: https://weatherwidget.io/
 - 笔试题: https://www.kdocs.cn/l/siiFaelnmpqw
+
+
+
+https://github.com/MrLeo/notion/settings/pages
