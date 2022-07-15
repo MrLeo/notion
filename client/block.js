@@ -1,18 +1,19 @@
 const { Client } = require('@notionhq/client')
 
-const notion = new Client({ auth: process.env.NOTION_API_KEY })
+const auth = 'op://fmvgmjtgi5eytk3v5rwxnsnm3e/NotionKey/INNO'
+
+const notion = new Client({ auth })
 
 ;(async () => {
   try {
-    const blockId = '791818157829408588c8d5677f3aae28'
+    const blockId = '71ddf928144d41999448be56a69d2fd5'
 
     const response = await notion.blocks.retrieve({ block_id: blockId })
-    response.callout['rich_text'][1]['plain_text'] = `(${version})`
-    response.callout['rich_text'][1]['text']['content'] = response.callout['rich_text'][1]['plain_text']
+    console.log(`[LOG] ->`, JSON.stringify(response, null, 2))
 
-    const response2 = await notion.blocks.update({ block_id: blockId, callout: response.callout })
-    console.info('[Notion] -> 版本号已更新', chalk.bgBlue.black(``, response2.callout['rich_text'][1]['plain_text']))
+    // const updateResponse = await notion.blocks.update({ block_id: blockId, callout: response.callout })
+    // console.log(`[LOG] -> updateResponse`, JSON.stringify(updateResponse, null, 2))
   } catch (err) {
-    console.error(`[Notion] -> updateNotionVersion`, err)
+    console.error(`[Notion] ->`, err)
   }
 })()
