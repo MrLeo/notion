@@ -7,6 +7,7 @@
 
 > 1. https://mrleo.github.io/notion/
 > 2. https://notion.xuebin.me/
+> 3. http://mr.leo.gitee.io/notion/
 
 - 网易云音乐: https://mrleo.github.io/notion/
 - gitalk: https://mrleo.github.io/notion/gitalk
